@@ -1,8 +1,7 @@
 # excluir archivo de sistema de MAC
 .DS_Store
 
-# excluir imágenes
-assets/imagenes/*
+
 # excluir imágenes
 fonts/*
 

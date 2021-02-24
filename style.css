@@ -1,9 +1,31 @@
-/*shit option abajo, para duplicar*/
-@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,500;1,700&display=swap");
+/*shift option abajo, para duplicar*/
+
+/* Tipografía */
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+/* Variables */
+:root {
+  --primario: #e10000;
+  --primario-fuerte: #a60000;
+  --secundario: #fff2e7;
+  --negro: #000000;
+  --blanco: #ffffff;
+  --font-family: "Arimo", sans-serif;
+  --font-size: 17px;
+  --h1: 71px;
+  --h2: 53px;
+  --h3: 40px;
+  --h4: 30px;
+  --h5: 22px;
+  --h6: 17px;
+}
 
 /* Base */
+
 body {
-  font-family: "Arimo", sans-serif;
+  background-color: var(--secundario);
+  font-family: var(---font-family);
+  font-weight: 400;
   display: grid;
   max-height: 100vh;
 }
@@ -13,10 +35,33 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Arimo", sans-serif;
+  font-family: var(---font-family);
   font-weight: 700;
 }
 
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+h6 {
+  font-size: var(--h6);
+}
 ul li {
   list-style-type: none;
 }
@@ -26,10 +71,12 @@ ul li a {
   color: black;
   font-family: "Arimo", sans-serif;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 /* Componentes */
+
+/* MENU */
 
 .header {
   display: grid;
@@ -37,16 +84,31 @@ ul li a {
 }
 .nav ul {
   padding-left: 0px;
-  padding-top: 30px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-around;
 }
-
 .logo {
   height: 123px;
   padding-left: 75px;
   padding-top: 30px;
 }
+
+/* Aqui 👇🏼 */
+.home {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.home-gif {
+  max-width: 700px;
+  background-color: blue;
+}
+.home-description {
+  background-color: blueviolet;
+}
+
+/* FOOTER */
 
 .footer {
   padding-bottom: 30px;
@@ -73,17 +135,66 @@ ul li a {
   font-size: 10px;
   letter-spacing: 3px;
 }
-
 .redes {
   display: flex;
-  flex-direction: row;
+  justify-items: center;
 }
-.instagram {
+.redes svg {
   height: 20px;
-  padding-right: 7px;
-  padding-left: 7px;
+  width: 40px;
 }
 
-.behance {
-  height: 20px;
+/* Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-items: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-center {
+  place-content: center;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.outline {
+  outline: 2px solid black;
 }

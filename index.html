@@ -11,10 +11,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <!-- poner una clase al body "layout" para tener mayor control sobre el header, saludo & footer -->
-  <body>
+  <body class="layout">
     <header class="header">
       <!-- atributos de las imágenes src(de donde jalamos la imagen, actualizar a un URL de cloudinary), alt(texto alternativo que ayuda a describir de que trata la imagen útil para cuando la imagen no se carga), width(ancho de la imagen), height(alto de la imagen), loading(optimizacion para indicar como cargar la imagen, el valor ideal es lazy que indica que cargue el documento lo más pronto posible y al final las imágenes) -->
-      <img class="logo" src="./assets/logo.svg" alt="logo" />
+      <img
+        class="logo"
+        src="https://res.cloudinary.com/di9gkqy78/image/upload/v1614263028/Portafolio/logo_qndizu.svg"
+        alt="logo"
+        width="300px"
+        height="150px;"
+        loading="lazy"
+      />
       <nav class="nav">
         <!-- ponemos atributo role list para indicar que es una lista -->
         <ul role="list">
@@ -26,20 +33,17 @@
       </nav>
     </header>
 
-    <!-- cambiar home por saludo -->
-    <div class="home flex">
-      <!-- cambiar home-gif por saludo-imagen, ver la linea 16 para poner los atributos restantes a la imagen -->
+    <div class="saludo flex">
       <img
-        src="https://res.cloudinary.com/di9gkqy78/image/upload/v1614110710/Portafolio/home_adg5lq.gif"
+        src="https://res.cloudinary.com/di9gkqy78/image/upload/v1614113409/Portafolio/Untitled_Artwork_jcdovs.gif"
         alt="gif"
-        class="home-gif"
+        class="saludo-imagen"
+        loading="lazy"
       />
-      <!-- cambiar home-descripcion por saludo-descripcion -->
-      <p class="home-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias qui
-        quidem repudiandae recusandae, aliquid doloribus vel saepe, magnam
-        architecto ipsa rem a voluptatum commodi vero perferendis dolore eos
-        optio quas.
+      <p class="saludo-description">
+        ¡Hola! me llamo Daniela, soy ilustradora y diseñadora gráfica en la
+        Ciudad de México.Conoce algunos de los proyectos que he hecho, si te
+        gustan, escríbeme!
       </p>
     </div>
 

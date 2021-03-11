@@ -29,6 +29,8 @@ body {
   font-weight: 400;
   display: grid;
   max-height: 100vh;
+  cursor: url("https://res.cloudinary.com/di9gkqy78/image/upload/v1614869178/Portafolio/click_hywcmi.svg"),
+    auto;
 }
 h1,
 h2,
@@ -101,9 +103,10 @@ ul li a {
 }
 .saludo-imagen {
   max-width: 400px;
+  padding-left: 5vw;
 }
 .saludo-description {
-  padding-right: 100px;
+  padding-right: 15vw;
 }
 
 /* FOOTER */

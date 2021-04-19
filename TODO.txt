@@ -1,1 +1,9 @@
 No aparece mi imagen para el pointer
+Menu responsivo
+Estructura base para todas mis secciones 
+  -Carrusel de imagenes junto con pequeña descripción
+  -Menu inferior de bolitas para ubicar al usuario
+Scroll bar a la derecha de la página
+Sección de  contacto
+  -Tipografía que se mueve (o estñatica pero acomodada de esa manera) 
+ 

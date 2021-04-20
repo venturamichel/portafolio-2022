@@ -11,27 +11,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <!-- poner una clase al body "layout" para tener mayor control sobre el header, saludo & footer -->
+
+  <!-- atributos de las imágenes src(de donde jalamos la imagen, actualizar a un URL de cloudinary), alt(texto alternativo que ayuda a describir de que trata la imagen útil para cuando la imagen no se carga), width(ancho de la imagen), height(alto de la imagen), loading(optimizacion para indicar como cargar la imagen, el valor ideal es lazy que indica que cargue el documento lo más pronto posible y al final las imágenes) -->
+
   <body class="layout">
     <header class="header">
-      <!-- atributos de las imágenes src(de donde jalamos la imagen, actualizar a un URL de cloudinary), alt(texto alternativo que ayuda a describir de que trata la imagen útil para cuando la imagen no se carga), width(ancho de la imagen), height(alto de la imagen), loading(optimizacion para indicar como cargar la imagen, el valor ideal es lazy que indica que cargue el documento lo más pronto posible y al final las imágenes) -->
-      <img
-        class="logo"
-        src="https://res.cloudinary.com/di9gkqy78/image/upload/v1614263028/Portafolio/logo_qndizu.svg"
-        alt="logo"
-        width="300px"
-        height="150px;"
-        loading="lazy"
-      />
+      <div class="logo">
+        <img
+          class="logo"
+          src="https://res.cloudinary.com/di9gkqy78/image/upload/v1614263028/Portafolio/logo_qndizu.svg"
+          alt="logo"
+          width="300px"
+          height="120px;"
+          loading="lazy"
+        />
+      </div>
+
       <nav class="nav">
-        <!-- ponemos atributo role list para indicar que es una lista -->
         <ul role="list">
           <li><a href="#ilustracion">ILUSTRACIÓN</a></li>
           <li><a href="#diseno">DISEÑO GRÁFICO</a></li>
           <li><a href="#editorial">EDITORIAL</a></li>
-          <li><a href="#">CONTACTO</a></li>
+          <li><a href="#contacto">CONTACTO</a></li>
         </ul>
       </nav>
     </header>
+
     <div class="saludo flex">
       <img
         src="https://res.cloudinary.com/di9gkqy78/image/upload/v1614113409/Portafolio/Untitled_Artwork_jcdovs.gif"

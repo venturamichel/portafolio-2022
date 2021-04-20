@@ -83,23 +83,53 @@ ul li a {
 .header {
   display: grid;
   grid-template-columns: 1fr 5fr;
-}
-.header > * {
   position: fixed;
   top: 0;
 }
+
 .nav ul {
-  height: 100px;
-  width: 100vw;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 100px;
-  padding-right: 80px;
-}
-.logo {
-  padding-left: 75px;
   padding-top: 30px;
+  padding-right: 40px;
+  height: 100px;
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* EFECTO HOVER */
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 50%;
+  position: relative;
+  background: #e10000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+a:active {
+  color: #e10000;
+}
+
+/* MENU CEL */
+@media screen and (max-width: 900px) {
+  .nav ul {
+    justify-content: left;
+    gap: 10px;
+    padding-right: 0px;
+  }
+}
+
+.logo {
+  padding-left: 0px;
+  padding-top: 15px;
 }
 
 /* Aqui 👇🏼 */
@@ -108,13 +138,30 @@ ul li a {
   display: flex;
   justify-items: center;
   align-items: center;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-bottom: 160px;
 }
 .saludo-imagen {
-  max-width: 400px;
-  padding-left: 5vw;
+  max-width: 500px;
 }
 .saludo-description {
-  padding-right: 15vw;
+  padding-right: 5vw;
+  max-width: 600px;
+}
+
+/* SALUDO CEL */
+@media screen and (max-width: 900px) {
+  .saludo-imagen {
+    max-width: 300px;
+  }
+  .saludo {
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }
 
 /* FOOTER */

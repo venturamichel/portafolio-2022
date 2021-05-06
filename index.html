@@ -1,166 +1,131 @@
 <!DOCTYPE html>
 <html lang="es-MX">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dani Zorrilla - Comunicación Visual</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <!-- poner una clase al body "layout" para tener mayor control sobre el header, saludo & footer -->
 
-  <!-- atributos de las imágenes src(de donde jalamos la imagen, actualizar a un URL de cloudinary), alt(texto alternativo que ayuda a describir de que trata la imagen útil para cuando la imagen no se carga), width(ancho de la imagen), height(alto de la imagen), loading(optimizacion para indicar como cargar la imagen, el valor ideal es lazy que indica que cargue el documento lo más pronto posible y al final las imágenes) -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dani Zorrilla - Comunicación Visual</title>
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<!-- poner una clase al body "layout" para tener mayor control sobre el header, saludo & footer -->
 
-  <body class="layout">
-    <header class="header">
-      <div class="logo">
-        <img
-          class="logo"
-          src="https://res.cloudinary.com/di9gkqy78/image/upload/v1614263028/Portafolio/logo_qndizu.svg"
-          alt="logo"
-          width="300px"
-          height="120px;"
-          loading="lazy"
-        />
-      </div>
+<!-- atributos de las imágenes src(de donde jalamos la imagen, actualizar a un URL de cloudinary), alt(texto alternativo que ayuda a describir de que trata la imagen útil para cuando la imagen no se carga), width(ancho de la imagen), height(alto de la imagen), loading(optimizacion para indicar como cargar la imagen, el valor ideal es lazy que indica que cargue el documento lo más pronto posible y al final las imágenes) -->
 
-      <nav class="nav">
-        <ul role="list">
-          <li><a href="#ilustracion">ILUSTRACIÓN</a></li>
-          <li><a href="#diseno">DISEÑO GRÁFICO</a></li>
-          <li><a href="#editorial">EDITORIAL</a></li>
-          <li><a href="#contacto">CONTACTO</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="saludo flex">
-      <img
-        src="https://res.cloudinary.com/di9gkqy78/image/upload/v1614113409/Portafolio/Untitled_Artwork_jcdovs.gif"
-        alt="gif"
-        class="saludo-imagen"
-        loading="lazy"
-      />
-      <p class="saludo-description">
-        ¡Hola! me llamo Daniela, soy ilustradora y diseñadora gráfica en la
-        Ciudad de México. Conoce algunos de los proyectos que he hecho, si te
-        gustan ¡escríbeme!
-      </p>
+<body class="layout">
+  <header class="header">
+    <div class="logo">
+      <img class="logo" src="https://res.cloudinary.com/di9gkqy78/image/upload/v1614263028/Portafolio/logo_qndizu.svg"
+        alt="logo" width="300px" height="120px;" loading="lazy" />
     </div>
 
-    <!-- <div class="proyecto">
+    <nav class="nav">
+      <ul role="list">
+        <li><a href="#ilustracion">ILUSTRACIÓN</a></li>
+        <li><a href="#diseno">DISEÑO GRÁFICO</a></li>
+        <li><a href="#editorial">EDITORIAL</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="saludo">
+    <img src="https://res.cloudinary.com/di9gkqy78/image/upload/v1614113409/Portafolio/Untitled_Artwork_jcdovs.gif"
+      alt="gif" class="saludo-imagen" loading="lazy" />
+    <p class="saludo-description">
+      ¡Hola! me llamo Daniela, soy ilustradora y diseñadora gráfica en la
+      Ciudad de México. Conoce algunos de los proyectos que he hecho, si te
+      gustan ¡escríbeme!
+    </p>
+  </div>
+
+  <!-- <div class="proyecto">
       <img src="" alt="" class="proyecto-img" />
       <h2 class="proyecto-titulo"></h2>
       <p class="proyecto-descripcion"></p>
     </div> -->
 
-    <div class="carrusel" id="ilustracion">
-      <ul class="flex" role="list">
-        <li>
-          <img
-            src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475108/Portafolio/Ilustracion/lavaheart_tbdtxe.jpg"
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475108/Portafolio/Ilustracion/pez_q3y9jb.jpg"
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475106/Portafolio/Ilustracion/Frame_23tapanco_icqxgf.jpg"
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475107/Portafolio/Ilustracion/maceta_bp8jut.jpg"
-            alt=""
-          />
-        </li>
-      </ul>
-    </div>
-    <div class="carrusel" id="diseno">
-      <ul class="flex" role="list">
-        <li>
-          <img
-            src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475132/Portafolio/Dise%C3%B1o/Frame_1mofeta_w7a4ug.jpg"
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475133/Portafolio/Dise%C3%B1o/Frame_41_hjwmaa.jpg"
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475133/Portafolio/Dise%C3%B1o/Frame_40_xivoxx.jpg"
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475132/Portafolio/Dise%C3%B1o/Frame_10vinil_xh3eg6.jpg"
-            alt=""
-          />
-        </li>
-      </ul>
-    </div>
-    <div class="carrusel" id="editorial">
-      <ul class="flex" role="list">
-        <li><img src="https://via.placeholder.com/300" alt="" /></li>
-        <li><img src="https://via.placeholder.com/300" alt="" /></li>
-        <li><img src="https://via.placeholder.com/300" alt="" /></li>
-        <li><img src="https://via.placeholder.com/300" alt="" /></li>
-      </ul>
-    </div>
+  <div class="carrusel" id="ilustracion">
+    <ul class="flex" role="list">
+      <li>
+        <img
+          src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475108/Portafolio/Ilustracion/lavaheart_tbdtxe.jpg"
+          alt="" />
+      </li>
+      <li>
+        <img src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475108/Portafolio/Ilustracion/pez_q3y9jb.jpg"
+          alt="" />
+      </li>
+      <li>
+        <img
+          src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475106/Portafolio/Ilustracion/Frame_23tapanco_icqxgf.jpg"
+          alt="" />
+      </li>
+      <li>
+        <img
+          src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475107/Portafolio/Ilustracion/maceta_bp8jut.jpg"
+          alt="" />
+      </li>
+    </ul>
+  </div>
+  <div class="carrusel" id="diseno">
+    <ul class="flex" role="list">
+      <li>
+        <img
+          src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475132/Portafolio/Dise%C3%B1o/Frame_1mofeta_w7a4ug.jpg"
+          alt="" />
+      </li>
+      <li>
+        <img
+          src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475133/Portafolio/Dise%C3%B1o/Frame_41_hjwmaa.jpg"
+          alt="" />
+      </li>
+      <li>
+        <img
+          src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475133/Portafolio/Dise%C3%B1o/Frame_40_xivoxx.jpg"
+          alt="" />
+      </li>
+      <li>
+        <img
+          src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475132/Portafolio/Dise%C3%B1o/Frame_10vinil_xh3eg6.jpg"
+          alt="" />
+      </li>
+    </ul>
+  </div>
+  <div class="carrusel" id="editorial">
+    <ul class="flex" role="list">
+      <li><img src="https://via.placeholder.com/300" alt="" /></li>
+      <li><img src="https://via.placeholder.com/300" alt="" /></li>
+      <li><img src="https://via.placeholder.com/300" alt="" /></li>
+      <li><img src="https://via.placeholder.com/300" alt="" /></li>
+    </ul>
+  </div>
 
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="copyright">
-          <!-- Ver la linea 16 para poner los atributos restantes a la imagen -->
-          <img
-            class="copy-img"
-            src="https://res.cloudinary.com/di9gkqy78/image/upload/v1614868999/Portafolio/copyright_vuyija.svg"
-            alt="copy-img"
-          />
-          <p class="copy-texto">ALL RIGHTS RESERVED</p>
-        </div>
-        <div class="redes">
-          <!-- <img class="behance" src="./assets/behance.svg" alt="behance" /> -->
-          <svg
-            class="behance"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 511.958 511.958"
-          >
-            <path
-              d="M210.624 240.619c10.624-5.344 18.656-11.296 24.16-17.728 9.792-11.584 14.624-26.944 14.624-45.984 0-18.528-4.832-34.368-14.496-47.648-16.128-21.632-43.424-32.704-82.016-33.28H0v312.096h142.56c16.064 0 30.944-1.376 44.704-4.192 13.76-2.848 25.664-8.064 35.744-15.68 8.96-6.624 16.448-14.848 22.4-24.544 9.408-14.656 14.112-31.264 14.112-49.76 0-17.92-4.128-33.184-12.32-45.728-8.288-12.544-20.448-21.728-36.576-27.552zM63.072 150.187h68.864c15.136 0 27.616 1.632 37.408 4.864 11.328 4.704 16.992 14.272 16.992 28.864 0 13.088-4.32 22.24-12.864 27.392-8.608 5.152-19.776 7.744-33.472 7.744H63.072v-68.864zm108.896 198.24c-7.616 3.68-18.336 5.504-32.064 5.504H63.072v-83.232h77.888c13.568.096 24.128 1.888 31.68 5.248 13.44 6.08 20.128 17.216 20.128 33.504 0 19.2-6.912 32.128-20.8 38.976zM327.168 110.539h135.584v38.848H327.168zM509.856 263.851c-2.816-18.08-9.024-33.984-18.688-47.712-10.592-15.552-24.032-26.944-40.384-34.144-16.288-7.232-34.624-10.848-55.04-10.816-34.272 0-62.112 10.72-83.648 32-21.472 21.344-32.224 52.032-32.224 92.032 0 42.656 11.872 73.472 35.744 92.384 23.776 18.944 51.232 28.384 82.4 28.384 37.728 0 67.072-11.232 88.032-33.632 13.408-14.144 20.992-28.064 22.656-41.728H446.24c-3.616 6.752-7.808 12.032-12.608 15.872-8.704 7.04-20.032 10.56-33.92 10.56-13.216 0-24.416-2.912-33.76-8.704-15.424-9.28-23.488-25.536-24.512-48.672h170.464c.256-19.936-.384-35.264-2.048-45.824zm-166.88 5.984c2.24-15.008 7.68-26.912 16.32-35.712 8.64-8.768 20.864-13.184 36.512-13.216 14.432 0 26.496 4.128 36.32 12.416 9.696 8.352 15.168 20.48 16.288 36.512h-105.44z"
-            />
-          </svg>
-          <!-- <img class="instagram" src="./assets/instagram.svg" alt="instagram" /> -->
-          <svg
-            class="instagram"
-            height="511pt"
-            viewBox="0 0 511 511.9"
-            width="511pt"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0074.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0"
-            />
-            <path
-              d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zm0 0M423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0"
-            />
-          </svg>
-        </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="copyright">
+        <!-- Ver la linea 16 para poner los atributos restantes a la imagen -->
+        <img class="copy-img"
+          src="https://res.cloudinary.com/di9gkqy78/image/upload/v1614868999/Portafolio/copyright_vuyija.svg"
+          alt="copy-img" />
+        <p class="copy-texto">ALL RIGHTS RESERVED</p>
       </div>
-    </footer>
-  </body>
+      <div class="redes">
+        <!-- <img class="behance" src="./assets/behance.svg" alt="behance" /> -->
+        <svg class="behance" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.958 511.958">
+          <path
+            d="M210.624 240.619c10.624-5.344 18.656-11.296 24.16-17.728 9.792-11.584 14.624-26.944 14.624-45.984 0-18.528-4.832-34.368-14.496-47.648-16.128-21.632-43.424-32.704-82.016-33.28H0v312.096h142.56c16.064 0 30.944-1.376 44.704-4.192 13.76-2.848 25.664-8.064 35.744-15.68 8.96-6.624 16.448-14.848 22.4-24.544 9.408-14.656 14.112-31.264 14.112-49.76 0-17.92-4.128-33.184-12.32-45.728-8.288-12.544-20.448-21.728-36.576-27.552zM63.072 150.187h68.864c15.136 0 27.616 1.632 37.408 4.864 11.328 4.704 16.992 14.272 16.992 28.864 0 13.088-4.32 22.24-12.864 27.392-8.608 5.152-19.776 7.744-33.472 7.744H63.072v-68.864zm108.896 198.24c-7.616 3.68-18.336 5.504-32.064 5.504H63.072v-83.232h77.888c13.568.096 24.128 1.888 31.68 5.248 13.44 6.08 20.128 17.216 20.128 33.504 0 19.2-6.912 32.128-20.8 38.976zM327.168 110.539h135.584v38.848H327.168zM509.856 263.851c-2.816-18.08-9.024-33.984-18.688-47.712-10.592-15.552-24.032-26.944-40.384-34.144-16.288-7.232-34.624-10.848-55.04-10.816-34.272 0-62.112 10.72-83.648 32-21.472 21.344-32.224 52.032-32.224 92.032 0 42.656 11.872 73.472 35.744 92.384 23.776 18.944 51.232 28.384 82.4 28.384 37.728 0 67.072-11.232 88.032-33.632 13.408-14.144 20.992-28.064 22.656-41.728H446.24c-3.616 6.752-7.808 12.032-12.608 15.872-8.704 7.04-20.032 10.56-33.92 10.56-13.216 0-24.416-2.912-33.76-8.704-15.424-9.28-23.488-25.536-24.512-48.672h170.464c.256-19.936-.384-35.264-2.048-45.824zm-166.88 5.984c2.24-15.008 7.68-26.912 16.32-35.712 8.64-8.768 20.864-13.184 36.512-13.216 14.432 0 26.496 4.128 36.32 12.416 9.696 8.352 15.168 20.48 16.288 36.512h-105.44z" />
+        </svg>
+        <!-- <img class="instagram" src="./assets/instagram.svg" alt="instagram" /> -->
+        <svg class="instagram" height="511pt" viewBox="0 0 511 511.9" width="511pt" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0074.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0" />
+          <path
+            d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zm0 0M423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0" />
+        </svg>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

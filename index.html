@@ -55,15 +55,21 @@
       <img src="" alt="" class="proyecto-img" />
       <h2 class="proyecto-titulo"></h2>
       <p class="proyecto-descripcion"></p>
-    </div> -->
+    </div>
 
     <div class="carrusel" id="ilustracion">
       <ul class="flex" role="list">
         <li>
-          <img
-            src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475108/Portafolio/Ilustracion/lavaheart_tbdtxe.jpg"
-            alt=""
-          />
+          <div class="contenedor-proyecto">
+            <img
+              src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475108/Portafolio/Ilustracion/lavaheart_tbdtxe.jpg"
+              alt=""
+            />
+            <p class="fichas">
+              <b>Lava Heart</b>
+              Ilustraciones y diseño editorial para libro album.
+            </p>
+          </div>
         </li>
         <li>
           <img
@@ -93,19 +99,19 @@
             alt=""
           />
         </li>
-        <li>
+        <li class="imagen">
           <img
             src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475133/Portafolio/Dise%C3%B1o/Frame_41_hjwmaa.jpg"
             alt=""
           />
         </li>
-        <li>
+        <li class="imagen">
           <img
             src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475133/Portafolio/Dise%C3%B1o/Frame_40_xivoxx.jpg"
             alt=""
           />
         </li>
-        <li>
+        <li class="imagen">
           <img
             src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475132/Portafolio/Dise%C3%B1o/Frame_10vinil_xh3eg6.jpg"
             alt=""
@@ -120,6 +126,78 @@
         <li><img src="https://via.placeholder.com/300" alt="" /></li>
         <li><img src="https://via.placeholder.com/300" alt="" /></li>
       </ul>
+    </div>
+-->
+
+    <div class="carrusel">
+      <input
+        class="open"
+        type="radio"
+        id="uno"
+        name="carrusel"
+        aria-hidden="true"
+        hidden=""
+        checked="checked"
+      />
+      <figure>
+        <img
+          src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475132/Portafolio/Dise%C3%B1o/Frame_10vinil_xh3eg6.jpg"
+        />
+        <figcaption class="fichas">
+          <b>Lava Heart</b> Ilustraciones y diseño editorial para libro album.
+        </figcaption>
+      </figure>
+      <input
+        class="open"
+        type="radio"
+        id="dos"
+        name="carrusel"
+        aria-hidden="true"
+        hidden=""
+      />
+      <figure>
+        <img
+          src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475133/Portafolio/Dise%C3%B1o/Frame_41_hjwmaa.jpg"
+        />
+        <figcaption class="fichas">
+          <b>Lava Heart</b> Ilustraciones y diseño editorial para libro album.
+        </figcaption>
+      </figure>
+      <input
+        class="open"
+        type="radio"
+        id="tres"
+        name="carrusel"
+        aria-hidden="true"
+        hidden=""
+      />
+      <figure>
+        <img
+          src="https://res.cloudinary.com/di9gkqy78/image/upload/v1615475132/Portafolio/Dise%C3%B1o/Frame_1mofeta_w7a4ug.jpg"
+        />
+        <figcaption class="fichas">
+          <b>Lava Heart</b> Ilustraciones y diseño editorial para libro album.
+        </figcaption>
+      </figure>
+
+      <label for="tres" class="carrusel-nav anterior uno">‹</label>
+      <label for="dos" class="carrusel-nav siguiente uno">›</label>
+      <label for="uno" class="carrusel-nav anterior dos">‹</label>
+      <label for="tres" class="carrusel-nav siguiente dos">›</label>
+      <label for="dos" class="carrusel-nav anterior tres">‹</label>
+      <label for="uno" class="carrusel-nav siguiente tres">›</label>
+
+      <ol class="carrusel-dots">
+        <li>
+          <label for="uno" class="dot">•</label>
+        </li>
+        <li>
+          <label for="dos" class="dot">•</label>
+        </li>
+        <li>
+          <label for="tres" class="dot">•</label>
+        </li>
+      </ol>
     </div>
 
     <footer class="footer">

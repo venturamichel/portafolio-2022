@@ -214,7 +214,7 @@ a:active {
   height: 20px;
   width: 40px;
 }
-
+.carrusel03 figure,
 .carrusel02 figure,
 .carrusel01 figure {
   position: relative;
@@ -288,33 +288,34 @@ a:active {
 /* Carrussel */
 
 .carrusel01,
-.carrusel02 {
+.carrusel02,
+.carrusel03 {
   position: relative;
   left: 30%;
   /* overflow: hidden; */
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   width: 600px;
 }
-
 .carrusel01 .open:checked + figure,
-.carrusel02 .open:checked + figure {
+.carrusel02 .open:checked + figure,
+.carrusel03 .open:checked + figure {
   position: static;
   opacity: 100;
 }
-
+.carrusel03 figure,
 .carrusel02 figure,
 .carrusel01 figure {
   position: absolute;
   opacity: 0;
 }
-
+.carrusel03 figure img,
 .carrusel02 figure img,
 .carrusel01 figure img {
   display: block;
   height: auto;
   max-width: 100%;
 }
-
+.carrusel03-nav,
 .carrusel02-nav,
 .carrusel01-nav {
   border-radius: 50%;
@@ -333,17 +334,17 @@ a:active {
   width: 40px;
   z-index: 10;
 }
-
+.carrusel03-nav.anterior,
 .carrusel02-nav.anterior,
 .carrusel01-nav.anterior {
   left: -80%;
 }
-
+.carrusel03-nav.siguiente,
 .carrusel02-nav.siguiente,
 .carrusel01-nav.siguiente {
   right: -80%;
 }
-
+.carrusel03-nav:hover,
 .carrusel02-nav:hover,
 .carrusel01-nav:hover {
   opacity: 0.8;
@@ -361,8 +362,15 @@ a:active {
   display: block;
 }
 
-.carrusel01-dots,
-.carrusel02-dots {
+.carrusel03 #siete:checked ~ .carrusel03-nav.siete,
+.carrusel03 #ocho:checked ~ .carrusel03-nav.ocho,
+.carrusel03 #nueve:checked ~ .carrusel03-nav.nueve {
+  display: block;
+}
+
+.carrusel03-dots,
+.carrusel02-dots,
+.carrusel01-dots {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -376,7 +384,8 @@ a:active {
 }
 
 .carrusel01-dots li,
-.carrusel02-dots li {
+.carrusel02-dots li,
+.carrusel03-dots li {
   display: inline-block;
   margin: 0 0.5rem;
 }
@@ -405,12 +414,16 @@ a:active {
 .carrusel02 #seis:checked ~ .seis ~ .carrusel02-dots li:nth-child(3) .dot {
   color: #000000;
 }
-.fichas {
+
+.carrusel03 #siete:checked ~ .siete ~ .carrusel03-dots li:nth-child(1) .dot,
+.carrusel03 #ocho:checked ~ .ocho ~ .carrusel03-dots li:nth-child(2) .dot,
+.carrusel03 #nueve:checked ~ .nueve ~ .carrusel03-dots li:nth-child(3) .dot {
+  color: #000000;
 }
 
 /* Carruseles */
 .carruseles {
   display: grid;
-  grid-row-gap: 80px;
+  grid-row-gap: 200px;
   height: auto;
 }

@@ -22,7 +22,6 @@
 }
 
 /* Base */
-
 body {
   background-color: var(--secundario);
   font-family: var(---font-family);
@@ -73,7 +72,6 @@ ul li a {
   /* Esto aplica a todos los enlaces de una lista pero no a los enlaces. Si queremos cambiar esto, cambiamos ul li a por a*/
   text-decoration: none;
   color: black;
-  font-family: "Arimo", sans-serif;
   font-weight: 800;
   font-size: 22px;
 }
@@ -133,10 +131,10 @@ a:active {
 }
 
 /* PROYECTOS CEL */
-@media screen and (max-width: 450px) {
+/* @media screen and (max-width: 450px) {
   .carrusel {
   }
-}
+} */
 
 .logo {
   padding-left: 0px;
@@ -286,7 +284,6 @@ a:active {
 }
 
 /* Carrussel */
-
 .carrusel01,
 .carrusel02,
 .carrusel03 {
@@ -426,4 +423,44 @@ a:active {
   display: grid;
   grid-row-gap: 200px;
   height: auto;
+}
+
+@media screen and (max-width: 450px) {
+  .carruseles {
+    gap: 0;
+    grid-row-gap: unset;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .carrusel01,
+  .carrusel02,
+  .carrusel03 {
+    width: fit-content;
+    left: unset;
+    padding-top: 40px;
+  }
+  .carrusel01 {
+    padding-top: 0;
+  }
+  .carrusel01,
+  .carrusel02,
+  .carrusel03 {
+    margin: 0 auto 60px;
+  }
+  .carrusel03 {
+    margin-bottom: 0;
+  }
+  .carrusel01 .figure,
+  .carrusel02 .figure,
+  .carrusel03 .figure {
+    margin: 0;
+  }
+  .carrusel03-nav.anterior,
+  .carrusel02-nav.anterior,
+  .carrusel01-nav.anterior,
+  .carrusel03-nav.siguiente,
+  .carrusel02-nav.siguiente,
+  .carrusel01-nav.siguiente {
+    display: none;
+  }
 }
